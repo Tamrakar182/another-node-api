@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 
 const productRoutes = require('./api/routes/products');
-const orderRoutes = require('./api/routes/orders')
+const orderRoutes = require('./api/routes/orders');
 
 mongoose.connect('mongodb+srv://tamrakar:'+ process.env.MONGO_ATLAS_PW +'@cluster0.qlizhbn.mongodb.net/?retryWrites=true&w=majority');
 
