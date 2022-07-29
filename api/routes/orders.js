@@ -24,8 +24,7 @@ router.get('/', (req,res, next) => {
                             url:'http://localhost:3000/orders' + doc._id
                         }
                     }
-                });
-                
+                })
             });
 
         })
@@ -110,7 +109,7 @@ router.delete('/:orderId',(req,res,next) => {
                 message: 'Order Deleted',
                 request: {
                     type: 'POST',
-                    url:'http://localhost:3000/orders'
+                    url:'http://localhost:3000/orders',
                     body: { productId: 'ID', quantity:'Number'}
                 }
             });
