@@ -85,7 +85,7 @@ router.get('/:orderId',(req,res,next) => {
                     message:'Order not found'
                 });
             }
-            res,status(200).json({
+            res.status(200).json({
                 order:order,
                 request:{
                     type:'GET',
