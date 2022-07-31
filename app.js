@@ -49,5 +49,3 @@ app.use((error, req, res, next) => {
 });
 
 module.exports = app;
-
-//next i should add jwt tokens
